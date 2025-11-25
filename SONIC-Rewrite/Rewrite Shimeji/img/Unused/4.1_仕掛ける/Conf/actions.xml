@@ -1,0 +1,1546 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Mascot xmlns="http://www.group-finity.com/Mascot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
+
+	<ActionList>
+		<Action Name="Look" Type="Embedded" Class="com.group_finity.mascot.action.Look" />
+		<Action Name="Offset" Type="Embedded" Class="com.group_finity.mascot.action.Offset" />
+
+		<!-- Standing -->
+
+		<Action Name="Stand" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Idle/Idle(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(27).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(28).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(29).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(30).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(31).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(32).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(33).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(34).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(35).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(36).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(37).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(38).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(39).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(40).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(41).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(42).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(43).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(44).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/Idle(45).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Walk" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Walk/Walk(1).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(2).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(3).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(4).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(5).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(6).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(7).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(8).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(9).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" Sound="/stomp.wav" Volume="-30"/>
+				<Pose Image="/Walk/Walk(10).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(11).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(12).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(13).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(14).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(15).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(16).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(17).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(18).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(19).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(20).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(21).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(22).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" Sound="/stomp.wav" Volume="-30"/>
+				<Pose Image="/Walk/Walk(23).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(24).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(25).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(26).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+				<Pose Image="/Walk/Walk(27).png" ImageAnchor="64,140" Velocity="-3,0" Duration="1" />
+			</Animation>
+			
+			<Animation IsTurn="true">
+				<Pose Image="/Idle/IdleTurn(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurn(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Run" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Run/Run(1).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" Sound="/run.wav" Volume="-15"/>
+				<Pose Image="/Run/Run(2).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(3).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(4).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(5).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(6).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(7).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(8).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+				<Pose Image="/Run/Run(9).png" ImageAnchor="64,140" Velocity="-8,0" Duration="2" />
+			</Animation>
+
+			<Animation IsTurn="true">
+				<Pose Image="/Idle/IdleTurnRun(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/rev.wav" Volume="-15"/>
+				<Pose Image="/Idle/IdleTurnRun(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Idle/IdleTurnRun(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/sprint.wav" Volume="-15"/>
+				</Animation>
+		</Action>
+
+		<Action Name="Dash" Type="Move" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" Sound="/spindash.wav" Volume="-20"/>
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+				<Pose Image="/Spin/Spin(3).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+				<Pose Image="/Spin/Spin(4).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+				<Pose Image="/Spin/Spin(5).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+				<Pose Image="/Spin/Spin(6).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+				<Pose Image="/Spin/Spin(7).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+				<Pose Image="/Spin/Spin(8).png" ImageAnchor="64,140" Velocity="-10,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<!-- Sitting -->
+
+		<Action Name="Think" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Animation/Think/Think(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/tap.wav" Volume="-20"/>
+				<Pose Image="/Animation/Think/Think(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(27).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/tap.wav" Volume="-20"/>
+				<Pose Image="/Animation/Think/Think(28).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(29).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(30).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(31).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(32).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(33).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(34).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(35).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Think/Think(36).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+		<Action Name="Laughing" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Animation/Laugh/Laugh(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/laugh.wav" Volume="-20"/>
+				<Pose Image="/Animation/Laugh/Laugh(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(27).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(28).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(29).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(30).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(31).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(32).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(33).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(34).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(35).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(36).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(37).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(38).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(39).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(40).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Laugh/Laugh(41).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Look Around" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Animation/Glance/Glance(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/look.wav" Volume="-15"/>
+				<Pose Image="/Animation/Glance/Glance(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/look.wav" Volume="-15"/>
+				<Pose Image="/Animation/Glance/Glance(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/notice.wav" Volume="-15"/>
+				<Pose Image="/Animation/Glance/Glance(27).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(28).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(29).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(30).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(31).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(32).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(33).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(34).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(35).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(36).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(37).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(38).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(39).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(40).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(41).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(42).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(43).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(44).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(45).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(46).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(47).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(48).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(49).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Glance/Glance(50).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitWithLegsUp" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Sit/Sitting(1).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(2).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(3).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(4).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(5).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(6).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" Sound="/sit.wav" Volume="-20"/>
+				<Pose Image="/Sit/Sitting(7).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(8).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sitting(9).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+		
+		<Action Name="SitWithLegsDown" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Sit/Sit(1).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(2).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(3).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(4).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(5).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(6).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(7).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(8).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(9).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(10).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(11).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(12).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(13).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(14).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(15).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(16).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(17).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(18).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(19).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(20).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(21).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(22).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(23).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(24).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(25).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(26).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(27).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/Sit(28).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<Action Name="SitAndDangleLegs" Type="Stay" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Sit/SittingBored(1).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" Sound="/tictoc.wav" Volume="-35"/>
+				<Pose Image="/Sit/SittingBored(2).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(3).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(4).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(5).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(6).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(7).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(8).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(9).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(10).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(11).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(12).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(13).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(14).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(15).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(16).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(17).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(18).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(19).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(20).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(21).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(22).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(23).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(24).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(25).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(26).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(27).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Sit/SittingBored(28).png" ImageAnchor="90,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+		
+		<Action Name="Admire" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Animation/Admire/Admire(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/shiny.wav" Volume="-20"/>
+				<Pose Image="/Animation/Admire/Admire(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1"  />
+				<Pose Image="/Animation/Admire/Admire(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Animation/Admire/Admire(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Animation/Admire/Admire(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="4" />
+				<Pose Image="/Animation/Admire/Admire(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="5" />
+				<Pose Image="/Animation/Admire/Admire(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="6" />
+				<Pose Image="/Animation/Admire/Admire(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="5" />
+				<Pose Image="/Animation/Admire/Admire(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="4" />
+				<Pose Image="/Animation/Admire/Admire(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Animation/Admire/Admire(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Animation/Admire/Admire(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Animation/Admire/Admire(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+		
+		<!-- Ceiling -->
+
+		<Action Name="GrabCeiling" Type="Stay" BorderType="Ceiling">
+			<Animation>
+				<Pose Image="/Ceiling/CeilingIdle(1).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(2).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(3).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(4).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(5).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(6).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(7).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(8).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(9).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(10).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(11).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(12).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(13).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(14).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(15).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/CeilingIdle(16).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+		
+		<Action Name="ClimbCeiling" Type="Move" BorderType="Ceiling">
+			<Animation>
+				<Pose Image="/Ceiling/Ceiling(1).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" Sound="/climb.wav" Volume="-20"/>
+				<Pose Image="/Ceiling/Ceiling(2).png" ImageAnchor="64,20" Velocity="-1,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(3).png" ImageAnchor="64,20" Velocity="-1,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(4).png" ImageAnchor="64,20" Velocity="-1,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(5).png" ImageAnchor="64,22" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(6).png" ImageAnchor="64,24" Velocity="-2,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(7).png" ImageAnchor="64,26" Velocity="-2,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(8).png" ImageAnchor="64,28" Velocity="-2,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(9).png" ImageAnchor="64,27" Velocity="-2,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(10).png" ImageAnchor="64,25" Velocity="-2,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(11).png" ImageAnchor="64,22" Velocity="-2,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(12).png" ImageAnchor="64,20" Velocity="-1,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(13).png" ImageAnchor="64,20" Velocity="-1,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(14).png" ImageAnchor="64,20" Velocity="-1,0" Duration="1" />
+				<Pose Image="/Ceiling/Ceiling(15).png" ImageAnchor="64,20" Velocity="0,0" Duration="2" />
+				<Pose Image="/Ceiling/Ceiling(16).png" ImageAnchor="64,20" Velocity="-2,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<!-- Wall -->
+
+		<Action Name="GrabWall" Type="Stay" BorderType="Wall">
+			<Animation>
+				<Pose Image="/Climb/ClimbIdle(1).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(2).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(3).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(4).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(5).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(6).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(7).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(8).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(9).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/ClimbIdle(10).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+		<Action Name="ClimbWall" Type="Move" BorderType="Wall">
+			<Animation Condition="#{TargetY &lt; mascot.anchor.y}">
+				<Pose Image="/Climb/Climb(1).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" Sound="/climb.wav" Volume="-20"/>
+				<Pose Image="/Climb/Climb(2).png" ImageAnchor="38,140" Velocity="0,-1" Duration="2" />
+				<Pose Image="/Climb/Climb(3).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(4).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(5).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(6).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(7).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(8).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(9).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(10).png" ImageAnchor="38,140" Velocity="0,-1" Duration="2" />
+				<Pose Image="/Climb/Climb(11).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/Climb(12).png" ImageAnchor="38,140" Velocity="0,-1" Duration="2" />
+				<Pose Image="/Climb/Climb(13).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(14).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(15).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+				<Pose Image="/Climb/Climb(16).png" ImageAnchor="38,140" Velocity="0,-2" Duration="2" />
+			</Animation>
+
+			<Animation Condition="#{TargetY &gt;= mascot.anchor.y}">
+				<Pose Image="/Climb/Climb(16).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" Sound="/climb2.wav" Volume="-20"/>
+				<Pose Image="/Climb/Climb(15).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(14).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(13).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(12).png" ImageAnchor="38,140" Velocity="0,1" Duration="2" />
+				<Pose Image="/Climb/Climb(11).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Climb/Climb(9).png" ImageAnchor="38,140" Velocity="0,1" Duration="2" />
+				<Pose Image="/Climb/Climb(8).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(7).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(6).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(5).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(4).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(3).png" ImageAnchor="38,140" Velocity="0,2" Duration="2" />
+				<Pose Image="/Climb/Climb(2).png" ImageAnchor="38,140" Velocity="0,1" Duration="2" />
+				<Pose Image="/Climb/Climb(1).png" ImageAnchor="38,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<!-- Falling -->
+
+		<Action Name="Jumping" Type="Embedded" Class="com.group_finity.mascot.action.Jump"
+			VelocityParam="30">
+			<Animation>
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/bounce.wav" Volume="-20"/>
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,144" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(3).png" ImageAnchor="64,148" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(4).png" ImageAnchor="64,152" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(5).png" ImageAnchor="64,148" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(6).png" ImageAnchor="64,144" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Falling" Type="Embedded" Class="com.group_finity.mascot.action.Fall"
+			RegistanceX="0.05" RegistanceY="0.1" Gravity="2">
+			<Animation>
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/spindash.wav" Volume="-10"/>
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Bouncing" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/bounce.wav" Volume="-20"/>
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,144" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(3).png" ImageAnchor="64,148" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(4).png" ImageAnchor="64,152" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(5).png" ImageAnchor="64,148" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(6).png" ImageAnchor="64,144" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Spin/Spin(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Tripping" Type="Animate" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" Sound="/brake.wav" Volume="-50"/>
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Spin/Spin(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Spin/Spin(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+
+
+		<!-- Dragging -->
+
+		<Action Name="Pinched" Type="Embedded" Class="com.group_finity.mascot.action.Dragged">
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x-50}">
+				<Pose Image="/Throw/ThrowL(3).png" ImageAnchor="75,140" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x-30}">
+				<Pose Image="/Throw/ThrowL(2).png" ImageAnchor="75,140" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x}">
+				<Pose Image="/Throw/ThrowL(1).png" ImageAnchor="75,140" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &gt; mascot.environment.cursor.x-10 &amp;&amp; FootX &lt; mascot.environment.cursor.x+10}">
+				<Pose Image="/Throw/Throw.png" ImageAnchor="75,140" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x+30}">
+				<Pose Image="/Throw/ThrowR(1).png" ImageAnchor="75,140" Velocity="0,0" Duration="5"/>
+			</Animation>
+			<Animation Condition="#{FootX &lt; mascot.environment.cursor.x+50}">
+				<Pose Image="/Throw/ThrowR(2).png" ImageAnchor="75,140" Velocity="0,0" Duration="5" />
+			</Animation>
+			<Animation Condition="#{FootX &gt;= mascot.environment.cursor.x+30}">
+				<Pose Image="/Throw/ThrowR(3).png" ImageAnchor="75,140" Velocity="0,0" Duration="5" />
+			</Animation>
+		</Action>
+		<Action Name="Resisting" Type="Embedded" Class="com.group_finity.mascot.action.Regist">
+			<Animation>
+				<Pose Image="/Throw/ThrowStruggle(1).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" Sound="/laugh.wav" Volume="-20"/>
+				<Pose Image="/Throw/ThrowStruggle(2).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(3).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(4).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(5).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(1).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(2).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(3).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(4).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(5).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(1).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(2).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(3).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(4).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(5).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(1).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(2).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(3).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(4).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Throw/ThrowStruggle(5).png" ImageAnchor="75,140" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+	</ActionList>
+
+	<!-- Actual Behavior -->
+	<ActionList>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Fall" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling"/>
+			<Action Type="Select">
+				<Action Type="Sequence" Condition="${mascot.environment.floor.isOn(mascot.anchor) ||
+					mascot.environment.activeIE.topBorder.isOn(mascot.anchor) }">
+					<ActionReference Name="Bouncing"/>
+					<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+				</Action>
+				<ActionReference Name="GrabWall" Duration="100" />
+			</Action>
+		</Action>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Dragged" Type="Sequence" Loop="true">
+			<ActionReference Name="Pinched"/>
+			<ActionReference Name="Resisting" />
+		</Action>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Thrown" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling" InitialVX="${mascot.environment.cursor.dx}" InitialVY="${mascot.environment.cursor.dy}"/>
+			<Action Type="Select">
+				<Action Type="Sequence" Condition="${mascot.environment.floor.isOn(mascot.anchor) || mascot.environment.activeIE.topBorder.isOn(mascot.anchor) }">
+					<ActionReference Name="Bouncing"/>
+					<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+				</Action>
+				<ActionReference Name="GrabWall" Duration="100" />
+			</Action>
+		</Action>
+
+		<Action Name="StandUp" Type="Sequence" Loop="false">
+			<ActionReference Name="Stand" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="Thinking" Type="Sequence" Loop="false">
+			<ActionReference Name="Think" Duration="${36}" />
+		</Action>
+
+		<Action Name="SitWhileDanglingLegs" Type="Sequence" Loop="false">
+			<ActionReference Name="SitWithLegsUp" Duration="18" />
+			<ActionReference Name="SitWithLegsDown" Duration="${200+Math.random()*100}" />
+			<ActionReference Name="SitAndDangleLegs" Duration="${200+Math.random()*100}" />
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="HoldOntoWall" Type="Sequence" Loop="false">
+			<ActionReference Name="GrabWall" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="FallFromWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Offset" X="${mascot.lookRight ? -1 : 1}" />
+			<ActionReference Name="Stand" />
+		</Action>
+
+		<Action Name="HoldOntoCeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="GrabCeiling" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="FallFromCeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Offset" Y="1" />
+			<ActionReference Name="Stand" />
+		</Action>
+
+		<Action Name="WalkAlongWorkAreaFloor" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.workArea.left+64+Math.random()*(mascot.environment.workArea.width-128)}" />
+		</Action>
+
+		<Action Name="RunAlongWorkAreaFloor" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.workArea.left+64+Math.random()*(mascot.environment.workArea.width-128)}" />
+		</Action>
+
+		<Action Name="WalkLeftAlongFloorAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.workArea.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Look" LookRight="true" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Think" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="WalkRightAlongFloorAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.workArea.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Look" LookRight="false" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Think" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="GrabWorkAreaBottomLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="#{mascot.environment.workArea.left}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="GrabWorkAreaBottomRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="#{mascot.environment.workArea.right}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="WalkLeftAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.workArea.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Look" LookRight="true" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Think" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="WalkRightAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.workArea.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Look" LookRight="false" />
+			<ActionReference Name="Stand" Duration="${20+Math.random()*20}" />
+			<ActionReference Name="Think" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="WalkAndGrabBottomLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="#{mascot.environment.workArea.left}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="WalkAndGrabBottomRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="#{mascot.environment.workArea.right}" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.bottom-64}" />
+		</Action>
+
+		<Action Name="JumpFromBottomOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${(mascot.anchor.x*3+mascot.environment.activeIE.left+Math.random()*mascot.environment.activeIE.width)/4}"
+				 TargetY="${mascot.environment.activeIE.bottom}" />
+			<ActionReference Name="GrabCeiling" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="ClimbHalfwayAlongWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="${mascot.environment.workArea.top+64 + Math.random()*(mascot.environment.workArea.height-128)}" />
+		</Action>
+
+		<Action Name="ClimbAlongWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.workArea.top+64}" />
+			<ActionReference Name="Offset" Y="-64" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="ClimbCeiling" TargetX="${mascot.lookRight ? mascot.environment.workArea.left+Math.random()*100 : mascot.environment.workArea.right-Math.random*100}" />
+		</Action>
+
+		<Action Name="ClimbAlongCeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="${mascot.environment.workArea.left+64+Math.random()*(mascot.environment.workArea.width-128)}" />
+		</Action>
+
+		<Action Name="WalkAlongIECeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.left+64+Math.random()*(mascot.environment.activeIE.width-128)}" />
+		</Action>
+
+		<Action Name="RunAlongIECeiling" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.left+64+Math.random()*(mascot.environment.activeIE.width-128)}" />
+		</Action>
+
+		<Action Name="SitOnTheLeftEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Think" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="SitOnTheRightEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Think" Duration="${500+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpFromLeftEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.left+Math.random()*50}" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${-15-Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="JumpFromRightEdgeOfIE" Type="Sequence" Loop="false">
+			<ActionReference Name="Walk" TargetX="${mascot.environment.activeIE.right-Math.random()*50}" />
+			<ActionReference Name="Stand" Duration="${50+Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${15+Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="WalkLeftAlongIEAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.left+100+Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Think" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkRightAlongIEAndSit" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.right-100-Math.random()*300}" />
+			<ActionReference Name="Stand" Duration="${100+Math.random()*100}" />
+			<ActionReference Name="Think" Duration="${500+Math.random()*1000}" />
+		</Action>
+
+		<Action Name="WalkLeftAlongIEAndJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.left+Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${-15-Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="WalkRightAlongIEAndJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Run" TargetX="${mascot.environment.activeIE.right-Math.random()*50}" />
+			<ActionReference Name="Falling" InitialVX="${15+Math.random()*5}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="DashIeCeilingLeftEdgeFromJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Dash" TargetX="${mascot.environment.activeIE.left+Math.random()*20+20}" />
+			<ActionReference Name="Falling" InitialVX="${-5-Math.random()*2}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="DashIeCeilingRightEdgeFromJump" Type="Sequence" Loop="false">
+			<ActionReference Name="Dash" TargetX="${mascot.environment.activeIE.right-Math.random()*20-20}" />
+			<ActionReference Name="Falling" InitialVX="${5+Math.random()*2}" InitialVY="${-20-Math.random()*5}"/>
+			<ActionReference Name="Bouncing" />
+		</Action>
+
+		<Action Name="HoldOntoIEWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="${mascot.environment.activeIE.top+64 + Math.random()*(mascot.environment.activeIE.height-128)}" />
+		</Action>
+
+		<Action Name="ClimbIEWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.activeIE.top+64}" />
+			<ActionReference Name="Offset" Y="-64" />
+			<ActionReference Name="Think" Duration="5" />
+			<ActionReference Name="Stand" Duration="${10+Math.random()*10}" />
+			<ActionReference Name="Walk" TargetX="${mascot.lookRight ? mascot.environment.activeIE.left+Math.random()*100 : mascot.environment.activeIE.right-Math.random*100}" />
+		</Action>
+
+		<Action Name="ClimbIEBottom" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="${mascot.environment.activeIE.left+64+(Math.random()*mascot.environment.activeIE.width-128)}" />
+		</Action>
+
+		<Action Name="GrabIEBottomLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="#{mascot.environment.activeIE.left}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.activeIE.bottom-64}" />
+		</Action>
+
+		<Action Name="GrabIEBottomRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="ClimbCeiling" TargetX="#{mascot.environment.activeIE.right}" />
+			<ActionReference Name="Look" />
+			<ActionReference Name="ClimbWall" TargetY="#{mascot.environment.activeIE.bottom-64}" />
+		</Action>
+
+		<Action Name="JumpFromLeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.workArea.left}" TargetY="${mascot.environment.workArea.bottom-Math.random()*mascot.environment.workArea.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpFromRightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.workArea.right}" TargetY="${mascot.environment.workArea.bottom-Math.random()*mascot.environment.workArea.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpOnIELeftWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.left}" TargetY="${mascot.environment.activeIE.bottom-Math.random()*mascot.environment.activeIE.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="JumpOnIERightWall" Type="Sequence" Loop="false">
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.right}" TargetY="${mascot.environment.activeIE.bottom-Math.random()*mascot.environment.activeIE.height/4}" />
+			<ActionReference Name="GrabWall" Duration="${100+Math.random()*100}" />
+		</Action>
+
+		<Action Name="ChaseMouse" Type="Sequence" Loop="false">
+			<Action Type="Sequence" Condition="${mascot.environment.ceiling.isOn(mascot.anchor) || mascot.environment.activeIE.bottomBorder.isOn(mascot.anchor)}">
+				<ActionReference Name="Offset" Y="1" />
+				<ActionReference Name="Falling"/>
+				<ActionReference Name="Bouncing" />
+			</Action>
+			<Action Type="Sequence" Condition="${mascot.environment.workArea.leftBorder.isOn(mascot.anchor) || mascot.environment.activeIE.rightBorder.isOn(mascot.anchor)}">
+				<ActionReference Name="Offset" X="1" />
+				<ActionReference Name="Falling"/>
+				<ActionReference Name="Bouncing" />
+			</Action>
+			<Action Type="Sequence" Condition="${mascot.environment.workArea.rightBorder.isOn(mascot.anchor) || mascot.environment.activeIE.leftBorder.isOn(mascot.anchor)}">
+				<ActionReference Name="Offset" X="-1" />
+				<ActionReference Name="Falling"/>
+				<ActionReference Name="Bouncing" />
+			</Action>
+			<Action Type="Select">
+				<ActionReference Name="DashIeCeilingLeftEdgeFromJump"
+					Condition="${mascot.environment.activeIE.topBorder.isOn(mascot.anchor) &amp;&amp;
+					mascot.anchor.x &lt; (mascot.environment.activeIE.left+mascot.environment.activeIE.right)/2}"/>
+				<ActionReference Name="DashIeCeilingRightEdgeFromJump"
+					Condition="${mascot.environment.activeIE.topBorder.isOn(mascot.anchor) &amp;&amp;
+					mascot.anchor.x &gt;= (mascot.environment.activeIE.left+mascot.environment.activeIE.right)/2}" />
+			</Action>
+			<ActionReference Name="Dash" TargetX="${ mascot.anchor.x+(mascot.environment.cursor.x-mascot.anchor.x)*Math.random()/2 }" />
+			<ActionReference Name="Tripping" Condition="${Math.random() &lt; 0.05}" />
+			<ActionReference Name="Dash" TargetX="${ mascot.anchor.x+(mascot.environment.cursor.x-mascot.anchor.x)*Math.random() }" />
+			<ActionReference Name="Tripping" Condition="${Math.random() &lt; 0.05}" />
+			<ActionReference Name="Dash" TargetX="#{mascot.environment.cursor.x+Gap}"
+				Gap="${ mascot.anchor.x &lt; mascot.environment.cursor.x ?
+					-Math.min( mascot.environment.cursor.x-mascot.anchor.x, Math.random()*200) :
+					Math.min( mascot.anchor.x-mascot.environment.cursor.x, Math.random()*200 ) }" />
+			<ActionReference Name="Look" LookRight="${mascot.anchor.x &lt; mascot.environment.cursor.x}" />
+		</Action>
+		
+		<!-- Summon Friend -->
+
+		<Action Name="Summon Friend" Type="Embedded" Class="com.group_finity.mascot.action.Breed"
+			BornX="0" BornY="200" BornBehavior="StandUp" BornMascot="2_Ekiduna">
+			<Animation>
+				<Pose Image="/Summon/Summon(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Summon/Summon(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Summon/Summon(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" Sound="/summon.wav" Volume="-20"/>
+				<Pose Image="/Summon/Summon(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="3" />
+				<Pose Image="/Summon/Summon(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />	
+				<Pose Image="/Summon/Summon(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+				<Pose Image="/Summon/Summon(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+
+		<!-- Run Affordance  -->
+
+		<Action Name="Tag" Type="Embedded" Class="com.group_finity.mascot.action.ScanMove" Affordance="Kill" Behavior="IWin" 
+			TargetBehavior="IAmIt" BorderType="Floor">
+    		<Animation>
+        		<Pose Image="/Jog/Jog(1).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" Sound="/shuffle.wav" Volume="-30"/>
+				<Pose Image="/Jog/Jog(2).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(3).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(4).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(5).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(6).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(7).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(8).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(9).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(10).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(11).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(12).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(13).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(14).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(15).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(16).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(17).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(18).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(19).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(20).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(21).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(1).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" Sound="/shuffle.wav" Volume="-30"/>
+				<Pose Image="/Jog/Jog(2).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(3).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(4).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(5).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(6).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(7).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(8).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(9).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(10).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(11).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(12).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(13).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(14).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(15).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(16).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(17).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(18).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(19).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(20).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(21).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(1).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" Sound="/shuffle.wav" Volume="-30"/>
+				<Pose Image="/Jog/Jog(2).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(3).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(4).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(5).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(6).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(7).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(8).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(9).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(10).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(11).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(12).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(13).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(14).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(15).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(16).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(17).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(18).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(19).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(20).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(21).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(1).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" Sound="/shuffle.wav" Volume="-30"/>
+				<Pose Image="/Jog/Jog(2).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(3).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(4).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(5).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(6).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(7).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(8).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(9).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(10).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(11).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(12).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(13).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(14).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(15).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(16).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(17).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(18).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(19).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(20).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Jog(21).png" ImageAnchor="64,140" Velocity="-2,0" Duration="1" />
+				<Pose Image="/Jog/Patient(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/tictoc.wav" Volume="-35" />
+				<Pose Image="/Jog/Patient(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(27).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(28).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(29).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(30).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(31).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(32).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(33).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(34).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(35).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(36).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(37).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(38).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(39).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(40).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(41).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(42).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(43).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(44).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(45).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(46).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(47).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(48).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(49).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(50).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(51).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(52).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(53).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(54).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(55).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Jog/Patient(56).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+    		</Animation>
+		</Action>
+
+		<!-- Hunt (Sequence) -->
+		<Action Name="Hunt" Type="Sequence">
+    		<ActionReference Name="Stand" Duration="${20+Math.random()*20}" /> <!-- a small delay is needed to prevent an infinite loop -->
+    		<ActionReference Name="Tag" />
+		</Action>
+		
+		<!-- I Hug You -->
+		<Action Name="IWin" Type="Sequence">
+			<ActionReference Name="Look" LookRight="false" />
+    		<ActionReference Name="Victory" />
+			<ActionReference Name="Ring Collect" />
+		</Action>
+
+		<!-- Hugged -->
+		<Action Name="Victory" Type="Embedded" Class="com.group_finity.mascot.action.Interact" BorderType="Floor">
+			<Animation>
+				<Pose Image="/Kill/void.png" ImageAnchor="66,140" Velocity="0,0" Duration="428" />
+			</Animation>
+		</Action>
+
+		<Action Name="Ring Collect" Type="Embedded" Class="com.group_finity.mascot.action.Transform"
+            TransformMascot="4.2_乱れた" TransformBehavior="StandUp" Draggable="false">
+            <Animation>
+				<Pose Image="/Ring/RingCollect(1).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" Sound="/error.wav" Volume="-15"/>
+				<Pose Image="/Ring/RingCollect(2).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(3).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(4).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(5).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(6).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(7).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(8).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(9).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(10).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(11).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(12).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(13).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(14).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(15).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(16).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(17).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(18).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(19).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(20).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(21).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(22).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(23).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(24).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(25).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(26).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(27).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(28).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(29).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(30).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(31).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(32).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(33).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(34).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(35).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(36).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(37).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(38).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(39).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(40).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(41).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(42).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(43).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(44).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(45).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(46).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(47).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(48).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(49).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(50).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(51).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(52).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(53).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(54).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(55).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(56).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(57).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(58).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(59).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(60).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(61).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(62).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(63).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(64).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(65).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(66).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(67).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(68).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(69).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(70).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(71).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(72).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(73).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(74).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(75).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(76).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(77).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(78).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(79).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(80).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(81).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(82).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(83).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(84).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(85).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(86).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(87).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(88).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(89).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(90).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(91).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(92).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(93).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(94).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(95).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(96).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(97).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(98).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(99).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(100).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(101).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(102).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(103).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(104).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(105).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(106).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(107).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(108).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(109).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(110).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(111).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(112).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(113).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(114).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(115).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(116).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(117).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(118).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(119).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(120).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(121).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(122).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(123).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(124).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(125).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(126).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(127).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(128).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(129).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(130).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(131).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(132).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(133).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(134).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(135).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(136).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(137).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(138).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(139).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(140).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(141).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(142).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(143).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(144).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(145).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(146).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(147).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(148).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(149).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(150).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(151).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(152).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(153).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(154).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(155).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(156).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(157).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(158).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(159).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(160).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(161).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(162).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(163).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(164).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(165).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(166).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(167).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(168).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(169).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(170).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(171).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(172).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(173).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(174).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(175).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(176).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(177).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(178).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(179).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(180).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(181).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(182).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(183).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(184).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(185).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(186).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(187).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(188).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(189).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(190).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(191).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(192).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(193).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(194).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(195).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(196).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(197).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(198).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(199).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(200).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(201).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(202).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(203).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(204).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(205).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(206).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(207).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(208).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(209).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(210).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(211).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(212).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(213).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(214).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(215).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(216).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(217).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(218).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(219).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(220).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(221).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(222).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(223).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(224).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(225).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(226).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(227).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(228).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(229).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(230).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(231).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(232).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(233).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(234).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(235).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(236).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(237).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(238).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(239).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(240).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(241).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(242).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(243).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(244).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(245).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(246).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(247).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(248).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(249).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(250).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(251).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(252).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(253).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(254).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(255).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(256).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(257).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(258).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(259).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(260).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(261).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(262).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(263).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(264).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(265).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(266).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(267).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(268).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(269).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(270).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(271).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(272).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(273).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(274).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(275).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(276).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(277).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(278).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(279).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(280).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(281).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(282).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(283).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(284).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(285).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(286).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(287).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(288).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(289).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(290).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(291).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(292).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(293).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(294).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(295).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(296).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(297).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(298).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(299).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(300).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(301).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(302).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(303).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(304).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(305).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(306).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(307).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(308).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(309).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(310).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(311).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(312).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(313).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(314).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(315).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(316).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(317).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(318).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(319).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(320).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(321).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(322).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(323).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(324).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(325).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(326).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(327).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(328).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(329).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(330).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(331).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(332).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(333).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(334).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(335).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(336).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(337).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(338).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(339).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(340).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(341).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(342).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(343).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(344).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(345).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(346).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(347).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(348).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(349).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(350).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(351).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(352).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(353).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(354).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(355).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(356).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(357).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(358).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(359).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(360).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(361).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(362).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(363).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(364).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(365).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(366).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(367).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(368).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(369).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(370).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(371).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(372).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(373).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(374).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(375).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(376).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(377).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(378).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(379).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(380).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(381).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(382).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(383).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(384).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(385).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(386).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(387).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(388).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(389).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(390).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(391).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(392).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(393).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(394).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(395).png" ImageAnchor="64,140" Velocity="0,0" Duration="1" />
+				<Pose Image="/Ring/RingCollect(396).png" ImageAnchor="64,140" Velocity="0,0" Duration="15" />
+				<Pose Image="/Ring/RingCollect(397).png" ImageAnchor="64,140" Velocity="0,0" Duration="30" />
+				<Pose Image="/Ring/RingCollect(398).png" ImageAnchor="64,140" Velocity="0,0" Duration="45" />
+				<Pose Image="/Ring/xp.png" ImageAnchor="115,130" Velocity="0,0" Duration="50" />
+            </Animation>
+        </Action>
+
+	</ActionList>
+
+</Mascot>

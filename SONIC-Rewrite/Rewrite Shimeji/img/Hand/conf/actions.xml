@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Mascot xmlns="http://www.group-finity.com/Mascot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
+
+	<ActionList>
+		<Action Name="Look" Type="Embedded" Class="com.group_finity.mascot.action.Look" />
+		<Action Name="Offset" Type="Embedded" Class="com.group_finity.mascot.action.Offset" />
+
+		<!-- Standing -->
+
+		<Action Name="Move" Type="Move" Draggable="false">
+			<Animation>
+				<Pose Image="/Fly(1).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(2).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(3).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(4).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(5).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(6).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(7).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(8).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(9).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(10).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(11).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(12).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(13).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(14).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(15).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(16).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(17).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(18).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(19).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(20).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(21).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(22).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(23).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(24).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+				<Pose Image="/Fly(25).png" ImageAnchor="32,34" Velocity="-5,0" Duration="2" />
+			</Animation>
+		</Action>
+		
+		<Action Name="SelfDestruct" Type="Embedded" Class="com.group_finity.mascot.action.SelfDestruct" Draggable="false">
+			<Animation>
+				<Pose Image="/Hit(1).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(2).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(3).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(4).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(5).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(6).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(7).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(8).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(9).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(10).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(11).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(12).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(13).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(14).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(15).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(16).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Hit(17).png" ImageAnchor="12,34" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<!-- Wall -->
+
+		<Action Name="GrabWall" Type="Stay" BorderType="Wall" Draggable="false">
+			<Animation>
+				<Pose Image="/Fly(1).png" ImageAnchor="32,34" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<!-- Falling -->
+
+		<Action Name="Falling" Type="Embedded" Class="com.group_finity.mascot.action.Fall"
+			RegistanceX="0.05" RegistanceY="0.1" Gravity="2" Draggable="false">
+			<Animation>
+				<Pose Image="/Fly(1).png" ImageAnchor="32,34" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+		
+		<!-- Dragging -->
+
+		<Action Name="Pinched" Type="Embedded" Class="com.group_finity.mascot.action.Dragged">
+			<Animation>
+				<Pose Image="/Fly(1).png" ImageAnchor="32,34" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+		
+		<Action Name="Resisting" Type="Embedded" Class="com.group_finity.mascot.action.Regist">
+			<Animation>
+				<Pose Image="/Fly(1).png" ImageAnchor="32,34" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+	</ActionList>
+
+	<!-- Actual Behavior -->
+	<ActionList>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Fall" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling" />
+			<ActionReference Name="SelfDestruct" />
+		</Action>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Dragged" Type="Sequence" Loop="true">
+			<ActionReference Name="Pinched"/>
+			<ActionReference Name="Resisting" />
+		</Action>
+
+		<!-- ALWAYS REQUIRED -->
+		<Action Name="Thrown" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling" InitialVX="${mascot.environment.cursor.dx}" InitialVY="${mascot.environment.cursor.dy}"/>
+			<ActionReference Name="SelfDestruct" />
+		</Action>
+
+		<Action Name="HitWall" Type="Sequence" Loop="false">
+			<ActionReference Name="GrabWall" />
+			<ActionReference Name="SelfDestruct" />
+		</Action>
+
+		<Action Name="TravelLeft" Type="Sequence" Loop="false">
+			<ActionReference Name="Look" LookRight="false" />
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.left}" TargetY="${mascot.environment.activeIE.bottom+64}" />
+			<ActionReference Name="ProjectileHitIe" />
+			<ActionReference Name="Recover" />
+			<ActionReference Name="SelfDestruct" />
+		</Action>
+
+		<Action Name="TravelRight" Type="Sequence" Loop="false">
+			<ActionReference Name="Look" LookRight="true" />
+			<ActionReference Name="Jumping" TargetX="${mascot.environment.activeIE.left}" TargetY="${mascot.environment.activeIE.bottom+64}"  />
+			<ActionReference Name="ProjectileHitIe" />
+			<ActionReference Name="Recover" />
+			<ActionReference Name="SelfDestruct" />
+		</Action>
+
+		<Action Name="ChaseMouse" Type="Sequence" Loop="false">
+			<ActionReference Name="Falling" />
+			<ActionReference Name="SelfDestruct" />
+		</Action>
+
+		<Action Name="ProjectileHitIe" Type="Embedded" Class="com.group_finity.mascot.action.ThrowIE"
+			 IeOffsetX="66" IeOffsetY="66">
+			<Animation>
+				<Pose Image="/Smack(1).png" ImageAnchor="32,34" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(2).png" ImageAnchor="32,44" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(3).png" ImageAnchor="32,54" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(4).png" ImageAnchor="32,64" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(5).png" ImageAnchor="32,74" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(6).png" ImageAnchor="42,84" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(7).png" ImageAnchor="52,94" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(8).png" ImageAnchor="62,104" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(9).png" ImageAnchor="72,114" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(10).png" ImageAnchor="82,124" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(11).png" ImageAnchor="92,134" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(12).png" ImageAnchor="82,144" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(13).png" ImageAnchor="92,154" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(14).png" ImageAnchor="92,164" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(15).png" ImageAnchor="82,154" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(16).png" ImageAnchor="72,144" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Recover" Type="Animate" Draggable="false">
+			<Animation>
+				<Pose Image="/Smack(17).png" ImageAnchor="62,134" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(18).png" ImageAnchor="52,104" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(19).png" ImageAnchor="42,84" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(20).png" ImageAnchor="32,64" Velocity="0,0" Duration="1" />
+				<Pose Image="/Smack(21).png" ImageAnchor="32,34" Velocity="0,0" Duration="1" />
+			</Animation>
+		</Action>
+
+		<Action Name="Jumping" Type="Embedded" Class="com.group_finity.mascot.action.Jump"
+			VelocityParam="20">
+			<Animation>
+				<Pose Image="/Fly(1).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(2).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(3).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(4).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(5).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(6).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(7).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(8).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(9).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(10).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(11).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(12).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(13).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(14).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(15).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(16).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(17).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(18).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(19).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(20).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(21).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(22).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(23).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(24).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+				<Pose Image="/Fly(25).png" ImageAnchor="32,34" Velocity="0,0" Duration="2" />
+			</Animation>
+		</Action>
+
+	</ActionList>
+
+</Mascot>

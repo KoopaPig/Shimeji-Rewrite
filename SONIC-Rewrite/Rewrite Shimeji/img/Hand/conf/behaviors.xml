@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Mascot xmlns="http://www.group-finity.com/Mascot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
+
+	<BehaviorList>
+	
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="ChaseMouse" Frequency="0" Hidden="true">
+			<NextBehaviorList Add="false">
+				<BehaviorReference Name="HitWall" Frequency="1" />
+			</NextBehaviorList>
+		</Behavior>
+		
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="Fall" Frequency="0" Hidden="true" />
+		
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="Dragged" Frequency="0" Hidden="true" />
+		
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="Thrown" Frequency="0" Hidden="true" />
+
+		<!-- On the Floor -->
+		<Condition Condition="#{mascot.environment.floor.isOn(mascot.anchor) || mascot.environment.activeIE.topBorder.isOn(mascot.anchor)}">
+			<Behavior Name="TravelLeft" Frequency="100" />
+			<Behavior Name="TravelRight" Frequency="100" />
+		</Condition>
+
+		<!-- On the Wall -->
+		<Condition Condition="#{ mascot.lookRight ? (
+					mascot.environment.workArea.rightBorder.isOn(mascot.anchor) || 
+					mascot.environment.activeIE.leftBorder.isOn(mascot.anchor) ) : (
+					mascot.environment.workArea.leftBorder.isOn(mascot.anchor) || 
+					mascot.environment.activeIE.rightBorder.isOn(mascot.anchor) ) }">
+			<Behavior Name="HitWall" Frequency="100" />
+		</Condition>
+	</BehaviorList>
+</Mascot>

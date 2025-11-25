@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Mascot xmlns="http://www.group-finity.com/Mascot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
+
+	<BehaviorList>
+	
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="ネズミを追いかける" Frequency="50" Hidden="false">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="理解不能" Frequency="50" />
+			</NextBehavior>
+		</Behavior>
+
+		<Behavior Name="ChaseMouse" Frequency="50" Hidden="true">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="SitAndFaceMouse" Frequency="50" />
+			</NextBehavior>
+		</Behavior>
+		
+		<Behavior Name="笑い" Frequency="30">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="理解不能" Frequency="50" />
+			</NextBehavior>
+		</Behavior>
+		
+		<Behavior Name="悪魔パニック" Frequency="50">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="理解不能" Frequency="100" />
+				<BehaviorReference Name="熟考" Frequency="50" />
+			</NextBehavior>
+		</Behavior>
+		
+		<Behavior Name="理解不能" Frequency="50">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="理解不能" Frequency="100" />
+				<BehaviorReference Name="熟考" Frequency="50" />
+			</NextBehavior>
+		</Behavior>
+
+		<Behavior Name="かごめかごめ" Frequency="6666" />
+
+		<Behavior Name="IWin" Frequency="0" Hidden="true">
+			<NextBehavior Add="false">
+				<BehaviorReference Name="Stand" Frequency="100" />
+			</NextBehavior>
+		</Behavior>
+		
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="Fall" Frequency="0" Hidden="true" />
+		
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="Dragged" Frequency="0" Hidden="true" />
+		
+		<!-- ALWAYS REQUIRED -->
+		<Behavior Name="Thrown" Frequency="0" Hidden="true" />
+
+		<!-- On the Floor -->
+		
+		<Condition Condition="#{mascot.environment.floor.isOn(mascot.anchor) || mascot.environment.activeIE.topBorder.isOn(mascot.anchor)}">
+			<Behavior Name="StandUp" Frequency="200" Hidden="true" />
+			<Behavior Name="苦しみ" Frequency="50">
+				<NextBehavior Add="true">
+					<BehaviorReference Name="熟考" Frequency="100" />
+				</NextBehavior>
+			</Behavior>
+			<Behavior Name="熟考" Frequency="50" >
+				<NextBehavior Add="false">
+					<BehaviorReference Name="苦しみ" Frequency="100" />
+				</NextBehavior>
+			</Behavior>
+			<Behavior Name="出て行け-正しい" Frequency="50" Condition="#{mascot.totalCount &lt; 50}">
+				<NextBehaviorList Add="false">
+					<BehaviorReference Name="StandUp" Frequency="1" />
+				</NextBehaviorList>
+			</Behavior>
+			<Behavior Name="出て行け-左" Frequency="50" Condition="#{mascot.totalCount &lt; 50}">
+				<NextBehaviorList Add="false">
+					<BehaviorReference Name="StandUp" Frequency="1" />
+				</NextBehaviorList>
+			</Behavior>
+		</Condition>
+		
+		<!-- On the Wall -->
+		<Condition Condition="#{ mascot.lookRight ? (
+					mascot.environment.workArea.rightBorder.isOn(mascot.anchor) || 
+					mascot.environment.activeIE.leftBorder.isOn(mascot.anchor) ) : (
+					mascot.environment.workArea.leftBorder.isOn(mascot.anchor) || 
+					mascot.environment.activeIE.rightBorder.isOn(mascot.anchor) ) }">
+			<Behavior Name="HoldOntoWall" Frequency="100" Hidden="true" />
+			<Behavior Name="FallFromWall" Frequency="50" Condition="${!mascot.environment.floor.isOn(mascot.anchor)}" Hidden="true" />
+		</Condition>
+		
+		<!-- On the Ceiling -->
+		<Condition Condition="#{mascot.environment.ceiling.isOn(mascot.anchor) || mascot.environment.activeIE.bottomBorder.isOn(mascot.anchor)}">
+			<Behavior Name="HoldOntoCeiling" Frequency="100" Hidden="true" />
+			<Behavior Name="FallFromCeiling" Frequency="50" Hidden="true" />
+		</Condition>
+		
+		<!-- On Work Area Floor -->
+		<Condition Condition="#{mascot.environment.floor.isOn(mascot.anchor)}">
+			<Behavior Name="WalkAlongWorkAreaFloor" Frequency="100" Hidden="true" />
+			<Behavior Name="RunAlongWorkAreaFloor" Frequency="100" Hidden="true" />
+		</Condition>
+		
+		<Condition Condition="#{mascot.environment.floor.isOn(mascot.anchor)}">
+			<Behavior Name="WalkLeftAlongFloorAndSit" Frequency="90" Hidden="true" />
+			<Behavior Name="WalkRightAlongFloorAndSit" Frequency="90" Hidden="true" />
+			<Behavior Name="GrabWorkAreaBottomLeftWall" Frequency="90" Hidden="true" />
+			<Behavior Name="GrabWorkAreaBottomRightWall" Frequency="90" Hidden="true" />
+			<Behavior Name="WalkLeftAndSit" Frequency="90" Hidden="true" />
+			<Behavior Name="WalkRightAndSit" Frequency="90" Hidden="true" />
+			<Behavior Name="歩きながら左下の壁をつかむ" Frequency="90" />
+			<Behavior Name="歩きながら右下の壁をつかむ" Frequency="90" />
+			<Behavior Name="下から飛び降りる" Frequency="50" Condition="#{mascot.anchor.x &gt;= mascot.environment.activeIE.left &amp;&amp;
+				mascot.anchor.x &lt; mascot.environment.activeIE.right}" />
+			<Behavior Name="友を召喚" Frequency="50" Condition="#{mascot.totalCount &lt; 2}" />
+		</Condition>
+		
+		<!-- On Work Area Facing the Wall -->
+		<Condition Condition="#{mascot.lookRight ? mascot.environment.workArea.rightBorder.isOn(mascot.anchor) :
+					mascot.environment.workArea.leftBorder.isOn(mascot.anchor)}">
+			<Behavior Name="ClimbHalfwayAlongWall" Frequency="90" Hidden="true" />
+			<Behavior Name="壁をよじ登る" Frequency="90" />
+		</Condition>
+		
+		<!-- On Work Area Top Facing -->
+		<Condition Condition="#{mascot.environment.ceiling.isOn(mascot.anchor)}">
+			<Behavior Name="天井をよじ登る" Frequency="100" />
+		</Condition>
+		
+		<!-- On Top of IE -->
+		<Condition Condition="#{mascot.environment.activeIE.topBorder.isOn(mascot.anchor)}">
+			<Behavior Name="WalkAlongIECeiling" Frequency="100" Hidden="true" />
+			<Behavior Name="RunAlongIECeiling" Frequency="100" Hidden="true" />
+			<Behavior Name="SitOnTheLeftEdgeOfIE" Frequency="100" Hidden="true" />
+			<Behavior Name="SitOnTheRightEdgeOfIE" Frequency="100" Hidden="true" />
+			<Behavior Name="JumpFromLeftEdgeOfIE" Frequency="100" Hidden="true" />
+			<Behavior Name="JumpFromRightEdgeOfIE" Frequency="100" Hidden="true" />
+			<Behavior Name="WalkLeftAlongIEAndSit" Frequency="100" Hidden="true" />
+			<Behavior Name="WalkRightAlongIEAndSit" Frequency="100" Hidden="true" />
+			<Behavior Name="WalkLeftAlongIEAndJump" Frequency="100" Hidden="true" />
+			<Behavior Name="WalkRightAlongIEAndJump" Frequency="100" Hidden="true" />
+		</Condition>
+		
+		<!-- On IE's Side -->
+		<Condition Condition="#{mascot.lookRight ? mascot.environment.activeIE.leftBorder.isOn(mascot.anchor) :
+					mascot.environment.activeIE.rightBorder.isOn(mascot.anchor)}">
+			<Behavior Name="HoldOntoIEWall" Frequency="100" Hidden="true" />
+			<Behavior Name="ClimbIEWall" Frequency="100" Hidden="true" />
+		</Condition>
+
+		<!-- On the Bottom of IE -->
+		<Condition Condition="#{mascot.environment.activeIE.bottomBorder.isOn(mascot.anchor)}">
+			<Behavior Name="ClimbIEBottom" Frequency="100" Hidden="true" />
+			<Behavior Name="GrabIEBottomLeftWall" Frequency="100" Hidden="true" />
+			<Behavior Name="GrabIEBottomRightWall" Frequency="100" Hidden="true" />
+		</Condition>
+		
+		<Behavior Name="JumpFromLeftWall" Frequency="50" Condition="#{!mascot.environment.workArea.leftBorder.isOn(mascot.anchor) &amp;&amp;
+			mascot.anchor.x &lt; mascot.environment.workArea.left+400 &amp;&amp;
+			Math.abs(mascot.environment.workArea.bottom-mascot.anchor.y) &lt;mascot.environment.workArea.height/4}" Hidden="true" />
+		<Behavior Name="JumpFromRightWall" Frequency="50" Condition="#{!mascot.environment.workArea.rightBorder.isOn(mascot.anchor) &amp;&amp;
+			mascot.anchor.x &gt;= mascot.environment.workArea.right-400 &amp;&amp;
+			Math.abs(mascot.environment.workArea.bottom-mascot.anchor.y) &lt;mascot.environment.workArea.height/4}" Hidden="true" />
+		
+		
+		<!-- IE Is Visible -->
+		<Condition Condition="#{mascot.environment.activeIE.visible}">
+			<Behavior Name="JumpOnIELeftWall" Frequency="50" Condition="#{mascot.anchor.x &lt; mascot.environment.activeIE.left &amp;&amp;
+				Math.abs(mascot.environment.activeIE.bottom-mascot.anchor.y) &lt;mascot.environment.activeIE.height/4}" Hidden="true" />
+			<Behavior Name="JumpOnIERightWall" Frequency="50" Condition="#{mascot.anchor.x &gt; mascot.environment.activeIE.right &amp;&amp;
+				Math.abs(mascot.environment.activeIE.bottom-mascot.anchor.y) &lt;mascot.environment.activeIE.height/4}" Hidden="true" />
+				
+		</Condition>
+	</BehaviorList>
+</Mascot>
