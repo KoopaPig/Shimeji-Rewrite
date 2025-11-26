@@ -672,7 +672,7 @@
             </annotation>
             <simpleType>
                 <restriction base="string">
-                    <pattern value=".+\.(png|gif|jpeg|jpg|bmp|PNG|GIF|JPEG|JPG|BMP)"/>
+                    <pattern value=".+\.(png|gif|jpeg|jpg|bmp|webp|PNG|GIF|JPEG|JPG|BMP|WEBP)"/>
                 </restriction>
             </simpleType>
         </attribute>
@@ -686,7 +686,7 @@
             </annotation>
             <simpleType>
                 <restriction base="string">
-                    <pattern value=".+\.(png|gif|jpeg|jpg|bmp|PNG|GIF|JPEG|JPG|BMP)"/>
+                    <pattern value=".+\.(png|gif|jpeg|jpg|bmp|webp|PNG|GIF|JPEG|JPG|BMP|WEBP)"/>
                 </restriction>
             </simpleType>
         </attribute>
