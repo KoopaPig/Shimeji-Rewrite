@@ -40,7 +40,7 @@ public class SettingsWindow extends JDialog {
     private Boolean alwaysShowInformationScreen = false;
     private String filter = "nearest";
     private double scaling = 1.0;
-    private double opacity = 1.0;
+    // private double opacity = 1.0;
     private Boolean windowedMode = false;
     private Dimension windowSize = new Dimension(600, 500);
     private Color backgroundColour = new Color(0, 255, 0);
@@ -83,7 +83,7 @@ public class SettingsWindow extends JDialog {
         } else if (filterText.equalsIgnoreCase("bicubic")) {
             filter = "bicubic";
         }
-        opacity = Double.parseDouble(properties.getProperty("Opacity", "1.0"));
+        // opacity = Double.parseDouble(properties.getProperty("Opacity", "1.0"));
         scaling = Double.parseDouble(properties.getProperty("Scaling", "1.0"));
         windowedMode = properties.getProperty("Environment", "generic").equals("virtual");
         String[] windowArray = properties.getProperty("WindowSize", "600x500").split("x");
@@ -100,7 +100,7 @@ public class SettingsWindow extends JDialog {
         } else {
             radFilterNearest.setSelected(true);
         }
-        sldOpacity.setValue((int) (opacity * 100));
+        // sldOpacity.setValue((int) (opacity * 100));
         sldScaling.setValue((int) (scaling * 10));
 
         for (String item : properties.getProperty("InteractiveWindows", "").split("/"))
@@ -149,7 +149,7 @@ public class SettingsWindow extends JDialog {
         lblDevelopedBy.setText(language.getString("DevelopedBy"));
         chkAlwaysShowShimejiChooser.setText(language.getString("AlwaysShowShimejiChooser"));
         chkAlwaysShowInformationScreen.setText(language.getString("AlwaysShowInformationScreen"));
-        lblOpacity.setText(language.getString("Opacity"));
+        // lblOpacity.setText(language.getString("Opacity"));
         lblScaling.setText(language.getString("Scaling"));
         lblFilter.setText(language.getString("FilterOptions"));
         radFilterNearest.setText(language.getString("NearestNeighbour"));
@@ -259,8 +259,8 @@ public class SettingsWindow extends JDialog {
         radFilterNearest = new JRadioButton();
         radFilterBicubic = new JRadioButton();
         radFilterHqx = new JRadioButton();
-        sldOpacity = new JSlider();
-        lblOpacity = new JLabel();
+        // sldOpacity = new JSlider();
+        // lblOpacity = new JLabel();
         chkAlwaysShowInformationScreen = new JCheckBox();
         pnlInteractiveWindows = new JPanel();
         pnlInteractiveTabs = new JTabbedPane();
@@ -399,22 +399,44 @@ public class SettingsWindow extends JDialog {
         radFilterHqx.setText("hqx");
         radFilterHqx.addItemListener(this::radFilterItemStateChanged);
 
-        sldOpacity.setMajorTickSpacing(10);
-        sldOpacity.setMinorTickSpacing(5);
-        sldOpacity.setPaintLabels(true);
-        sldOpacity.setPaintTicks(true);
-        sldOpacity.setSnapToTicks(true);
-        sldOpacity.setValue(10);
-        sldOpacity.setPreferredSize(new Dimension(300, 45));
-        sldOpacity.addChangeListener(this::sldOpacityStateChanged);
+        // sldOpacity.setMajorTickSpacing(10);
+        // sldOpacity.setMinorTickSpacing(5);
+        // sldOpacity.setPaintLabels(true);
+        // sldOpacity.setPaintTicks(true);
+        // sldOpacity.setSnapToTicks(true);
+        // sldOpacity.setValue(10);
+        // sldOpacity.setPreferredSize(new Dimension(300, 45));
+        // sldOpacity.addChangeListener(this::sldOpacityStateChanged);
 
-        lblOpacity.setText("Opacity");
+        // lblOpacity.setText("Opacity");
 
         chkAlwaysShowInformationScreen.setText("Always Show Information Screen");
         chkAlwaysShowInformationScreen.addItemListener(this::chkAlwaysShowInformationScreenItemStateChanged);
 
         GroupLayout pnlGeneralLayout = new GroupLayout(pnlGeneral);
         pnlGeneral.setLayout(pnlGeneralLayout);
+        pnlGeneralLayout.setHorizontalGroup(
+                pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(pnlGeneralLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                                        .addComponent(chkAlwaysShowShimejiChooser)
+                                        .addComponent(lblFilter)
+                                        .addComponent(lblScaling)
+                                        .addGroup(pnlGeneralLayout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addGroup(pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                                        .addGroup(pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                                                                .addComponent(radFilterNearest)
+                                                                .addComponent(sldScaling, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                                .addComponent(radFilterBicubic)
+                                                                .addComponent(radFilterHqx))))
+                                        .addComponent(chkAlwaysShowInformationScreen))
+                                .addContainerGap(26, Short.MAX_VALUE))
+        );
+
+        // OLD VERSION
+        /*
         pnlGeneralLayout.setHorizontalGroup(
                 pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(pnlGeneralLayout.createSequentialGroup()
@@ -436,6 +458,34 @@ public class SettingsWindow extends JDialog {
                                         .addComponent(chkAlwaysShowInformationScreen))
                                 .addContainerGap(26, Short.MAX_VALUE))
         );
+        */
+        
+
+        pnlGeneralLayout.setVerticalGroup(
+                pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(pnlGeneralLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(chkAlwaysShowShimejiChooser)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(chkAlwaysShowInformationScreen)
+                                .addGap(18, 18, 18)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lblScaling)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(sldScaling, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lblFilter)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(radFilterNearest)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(radFilterBicubic)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(radFilterHqx)
+                                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        
+        // OLD VERSION //
+        /*
         pnlGeneralLayout.setVerticalGroup(
                 pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(pnlGeneralLayout.createSequentialGroup()
@@ -461,6 +511,7 @@ public class SettingsWindow extends JDialog {
                                 .addComponent(radFilterHqx)
                                 .addContainerGap(40, Short.MAX_VALUE))
         );
+         */
 
         pnlTabs.addTab("General", pnlGeneral);
 
@@ -861,15 +912,17 @@ public class SettingsWindow extends JDialog {
                 !properties.getProperty("BackgroundMode", "centre").equals(backgroundMode) ||
                 !properties.getProperty("BackgroundImage", "").equalsIgnoreCase(backgroundImage == null ? "" : backgroundImage);
         imageReloadRequired = !properties.getProperty("Filter", "false").equalsIgnoreCase(filter) ||
-                Double.parseDouble(properties.getProperty("Scaling", "1.0")) != scaling ||
-                Double.parseDouble(properties.getProperty("Opacity", "1.0")) != opacity;
+                Double.parseDouble(properties.getProperty("Scaling", "1.0")) != scaling;
+        // imageReloadRequired = !properties.getProperty("Filter", "false").equalsIgnoreCase(filter) ||
+        //         Double.parseDouble(properties.getProperty("Scaling", "1.0")) != scaling ||
+        //         Double.parseDouble(properties.getProperty("Opacity", "1.0")) != opacity;        
         interactiveWindowReloadRequired = !properties.getProperty("InteractiveWindows", "").equals(interactiveWindows) ||
                 !properties.getProperty("InteractiveWindowsBlacklist", "").equals(interactiveWindowsBlacklist);
 
         try (OutputStream output = Files.newOutputStream(Main.SETTINGS_FILE)) {
             properties.setProperty("AlwaysShowShimejiChooser", alwaysShowShimejiChooser.toString());
             properties.setProperty("AlwaysShowInformationScreen", alwaysShowInformationScreen.toString());
-            properties.setProperty("Opacity", Double.toString(opacity));
+            // properties.setProperty("Opacity", Double.toString(opacity));
             properties.setProperty("Scaling", Double.toString(scaling));
             properties.setProperty("Filter", filter);
             properties.setProperty("InteractiveWindows", interactiveWindows);
@@ -978,6 +1031,7 @@ public class SettingsWindow extends JDialog {
         browseToUrl("https://patreon.com/kilkakon");
     }// GEN-LAST:event_btnPatreonActionPerformed
 
+    /* 
     private void sldOpacityStateChanged(ChangeEvent evt)// GEN-FIRST:event_sldOpacityStateChanged
     {// GEN-HEADEREND:event_sldOpacityStateChanged
         if (!sldOpacity.getValueIsAdjusting()) {
@@ -988,7 +1042,7 @@ public class SettingsWindow extends JDialog {
             }
         }
     }// GEN-LAST:event_sldOpacityStateChanged
-
+    */
     private void spnWindowHeightStateChanged(ChangeEvent evt)// GEN-FIRST:event_spnWindowHeightStateChanged
     {// GEN-HEADEREND:event_spnWindowHeightStateChanged
         windowSize.height = ((SpinnerNumberModel) spnWindowHeight.getModel()).getNumber().intValue();
@@ -1171,7 +1225,9 @@ public class SettingsWindow extends JDialog {
     private JLabel lblIcon;
     private JLabel lblKilkakon;
     private JLabel lblMenuOpacity;
-    private JLabel lblOpacity;
+    private JLabel lblModifiedBy;
+    private JLabel lblModders;
+    //private JLabel lblOpacity;
     private JLabel lblPrimaryColour1;
     private JLabel lblPrimaryColour2;
     private JLabel lblScaling;
@@ -1220,7 +1276,7 @@ public class SettingsWindow extends JDialog {
     private Box.Filler rigid3;
     private Box.Filler rigid4;
     private JSlider sldMenuOpacity;
-    private JSlider sldOpacity;
+    //private JSlider sldOpacity;
     private JSlider sldScaling;
     private JSpinner spnWindowHeight;
     private JSpinner spnWindowWidth;

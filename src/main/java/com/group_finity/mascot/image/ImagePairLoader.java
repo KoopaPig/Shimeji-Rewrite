@@ -40,12 +40,14 @@ public class ImagePairLoader {
             return;
         }
 
-        final BufferedImage leftImage = scale(premultiply(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(path))), opacity), scaling, filter);
+        //final BufferedImage leftImage = scale(premultiply(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(path))), opacity), scaling, filter);
+        final BufferedImage leftImage = scale(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(path))), scaling, filter);
         final BufferedImage rightImage;
         if (rightPath == null) {
             rightImage = flip(leftImage);
         } else {
-            rightImage = scale(premultiply(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(rightPath))), opacity), scaling, filter);
+            //rightImage = scale(premultiply(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(rightPath))), opacity), scaling, filter);
+            rightImage = scale(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(rightPath))), scaling, filter);
         }
 
         ImagePair ip = new ImagePair(new MascotImage(leftImage, new Point((int) Math.round(center.x * scaling), (int) Math.round(center.y * scaling))),
@@ -59,18 +61,26 @@ public class ImagePairLoader {
      * @param src the image to flip horizontally
      * @return horizontally flipped image
      */
-    private static BufferedImage flip(final BufferedImage src) {
-        final BufferedImage copy = new BufferedImage(src.getWidth(), src.getHeight(),
-                src.getType() == BufferedImage.TYPE_CUSTOM ? BufferedImage.TYPE_INT_ARGB : src.getType());
+    protected static BufferedImage flip(final BufferedImage src)
+    {
+        int width = src.getWidth();
+        int height = src.getHeight();
+        BufferedImage copy = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB_PRE);
 
-        for (int y = 0; y < src.getHeight(); y++) {
-            for (int x = 0; x < src.getWidth(); x++) {
-                copy.setRGB(copy.getWidth() - x - 1, y, src.getRGB(x, y));
+        int[] srcPixels = src.getRGB(0, 0, width, height, null, 0, width);
+        int[] dstPixels = new int[srcPixels.length];
+
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                dstPixels[y * width + x] = srcPixels[y * width + (width - x - 1)];
             }
         }
+
+        copy.setRGB(0, 0, width, height, dstPixels, 0, width);
         return copy;
     }
 
+    /* 
     private static BufferedImage premultiply(final BufferedImage source, final double opacity) {
         final BufferedImage returnImage = new BufferedImage(source.getWidth(), source.getHeight(),
                 source.getType() == BufferedImage.TYPE_CUSTOM ? BufferedImage.TYPE_INT_ARGB_PRE : source.getType());
@@ -92,6 +102,7 @@ public class ImagePairLoader {
 
         return returnImage;
     }
+    */
 
     private static BufferedImage scale(final BufferedImage source, final double scaling, Filter filter) {
         int width = source.getWidth();
