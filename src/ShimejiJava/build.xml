@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Shimeji-ee" basedir="." default="default">
+    <target name="default">
+        <ant target="Test">
+            <property name="edition" value="Calm"/>
+        </ant>
+    </target>
+
+    <!-- Add more targets for Rewrite forms in future -->
+
+    <target name="Test">
+
+        <!-- Create output folder -->
+        <mkdir dir="target/Shimeji-ee_${project.version}_${edition}" />
+
+        <!-- Copy main artifacts -->
+        <copy todir="target/Shimeji-ee_${project.version}_${edition}">
+            <fileset dir="target">
+                <include name="Shimeji-ee.jar"/>
+                <include name="Shimeji-ee.exe"/>
+                <include name="lib/*"/>
+            </fileset>
+        </copy>
+
+        <!-- Copy and rename behavior file -->
+        <mkdir dir="target/Shimeji-ee_${project.version}_${edition}/conf"/>
+
+        <copy file="conf/${edition}Behavior.xml"
+            tofile="target/Shimeji-ee_${project.version}_${edition}/conf/behaviors.xml" />
+
+        <!-- Copy remaining resources -->
+        <copy todir="target/Shimeji-ee_${project.version}_${edition}">
+            <fileset dir=".">
+                <include name="LICENSE.txt"/>
+                <include name="originalreadme.txt"/>
+                <include name="readme.txt"/>
+                <include name="changelog.txt"/>
+                <include name="kilkakon.txt"/>
+                <include name="img/**/*"/>
+                <include name="conf/**/*"/>
+                <exclude name="conf/behaviors.xml"/>
+                <exclude name="conf/*Behavior.xml"/>
+            </fileset>
+        </copy>
+
+    </target>
+</project>

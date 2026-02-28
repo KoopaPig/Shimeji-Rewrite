@@ -250,14 +250,33 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/assembly/dist.xml</descriptor>
+                    </descriptors>
+                    <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
             <plugin>
-                <!-- Generate the ZIP files from the old Ant build.xml script -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
                     <execution>
-                        <!-- Create ZIP files for the source and the three release variants -->
                         <id>create-zips</id>
                         <phase>package</phase>
                         <goals>
@@ -265,9 +284,8 @@
                         </goals>
                         <configuration>
                             <target>
-                                <!-- Execute the "zip" target in build.xml -->
                                 <ant antfile="${project.basedir}/build.xml">
-                                    <target name="zip"/>
+                                    <target name="default"/>
                                 </ant>
                             </target>
                         </configuration>
@@ -277,3 +295,4 @@
         </plugins>
     </build>
 </project>
+

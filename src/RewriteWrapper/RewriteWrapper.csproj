@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Sonic</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="RewriteBuild" BeforeTargets="Build">
+    <Exec WorkingDirectory="..\ShimejiJava" Command="mvn clean package" />
+  </Target>
+
+  <Target Name="CopyShimejiOutput" AfterTargets="Build">
+    <ItemGroup>
+      <ShimejiFiles Include="..\ShimejiJava\target\**\*.*" />
+    </ItemGroup>
+
+    <Copy
+      SourceFiles="@(ShimejiFiles)"
+      DestinationFolder="$(OutputPath)Shimeji\%(RecursiveDir)"
+      SkipUnchangedFiles="true" />
+  </Target>
+
+    <Target Name="CleanShimejiFolder" AfterTargets="Clean">
+	    <RemoveDir Directories="$(OutputPath)Shimeji" />
+    </Target>
+
+</Project>

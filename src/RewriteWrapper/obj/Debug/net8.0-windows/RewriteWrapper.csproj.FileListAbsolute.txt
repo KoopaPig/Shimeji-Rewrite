@@ -1,0 +1,35 @@
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.Properties.Resources.resources
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.csproj.GenerateResource.cache
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.AssemblyInfoInputs.cache
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.AssemblyInfo.cs
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.csproj.CoreCompileInputs.cache
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.Launcher.resources
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.genruntimeconfig.cache
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\bin\Debug\net8.0-windows\Rewrite Shimeji.exe
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\bin\Debug\net8.0-windows\Rewrite Shimeji.deps.json
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\bin\Debug\net8.0-windows\Rewrite Shimeji.runtimeconfig.json
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\bin\Debug\net8.0-windows\Rewrite Shimeji.dll
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\bin\Debug\net8.0-windows\Rewrite Shimeji.pdb
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\Rewrite Shimeji.dll
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\refint\Rewrite Shimeji.dll
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\Rewrite Shimeji.pdb
+C:\Users\maxno\source\repos\RewriteWrapper\RewriteWrapper\obj\Debug\net8.0-windows\ref\Rewrite Shimeji.dll
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\bin\Debug\net8.0-windows\Sonic.exe
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\bin\Debug\net8.0-windows\Sonic.deps.json
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\bin\Debug\net8.0-windows\Sonic.runtimeconfig.json
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\bin\Debug\net8.0-windows\Sonic.dll
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\bin\Debug\net8.0-windows\Sonic.pdb
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.Launcher.resources
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.Properties.Resources.resources
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.csproj.GenerateResource.cache
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.AssemblyInfoInputs.cache
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.AssemblyInfo.cs
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.csproj.CoreCompileInputs.cache
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.sourcelink.json
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\Sonic.dll
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\refint\Sonic.dll
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\Sonic.pdb
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\RewriteWrapper.genruntimeconfig.cache
+C:\Users\maxno\source\repos\Shimeji-Rewrite\src\RewriteWrapper\obj\Debug\net8.0-windows\ref\Sonic.dll
