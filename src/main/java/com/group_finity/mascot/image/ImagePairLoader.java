@@ -34,6 +34,29 @@ public class ImagePairLoader {
      * @param scaling the scale factor of the image
      * @param filter the type of filter to use to generate the image
      */
+    public static void load(final Path path, final Path rightPath, final Point center) throws IOException {
+        String key = path.toString() + (rightPath == null ? "" : rightPath);
+        if (ImagePairs.contains(key)) {
+            return;
+        }
+
+        //final BufferedImage leftImage = scale(premultiply(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(path))), opacity), scaling, filter);
+        final BufferedImage leftImage = ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(path)));
+        final BufferedImage rightImage;
+        if (rightPath == null) {
+            rightImage = flip(leftImage);
+        } else {
+            //rightImage = scale(premultiply(ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(rightPath))), opacity), scaling, filter);
+            rightImage = ImageIO.read(Files.newInputStream(Main.IMAGE_DIRECTORY.resolve(rightPath)));
+        }
+
+        ImagePair ip = new ImagePair(new MascotImage(leftImage, new Point((int) Math.round(center.x), (int) Math.round(center.y))),
+                new MascotImage(rightImage, new Point(rightImage.getWidth() - (int) Math.round(center.x), (int) Math.round(center.y))));
+        ImagePairs.put(key, ip);
+    }
+
+    // OLD VERSION
+    /*
     public static void load(final Path path, final Path rightPath, final Point center, final double scaling, final Filter filter, final double opacity) throws IOException {
         String key = path.toString() + (rightPath == null ? "" : rightPath);
         if (ImagePairs.contains(key)) {
@@ -54,6 +77,8 @@ public class ImagePairLoader {
                 new MascotImage(rightImage, new Point(rightImage.getWidth() - (int) Math.round(center.x * scaling), (int) Math.round(center.y * scaling))));
         ImagePairs.put(key, ip);
     }
+    */
+
 
     /**
      * Flips the image horizontally.

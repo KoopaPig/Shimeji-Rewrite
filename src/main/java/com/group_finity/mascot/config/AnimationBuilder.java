@@ -83,9 +83,10 @@ public class AnimationBuilder {
         String soundText = frameNode.getAttribute(schema.getString("Sound"));
         final String volumeText = frameNode.getAttribute(schema.getString("Volume")) != null ? frameNode.getAttribute(schema.getString("Volume")) : "0";
 
-        final double opacity = Double.parseDouble(Main.getInstance().getProperties().getProperty("Opacity", "1.0"));
-        final double scaling = Double.parseDouble(Main.getInstance().getProperties().getProperty("Scaling", "1.0"));
+        //final double opacity = Double.parseDouble(Main.getInstance().getProperties().getProperty("Opacity", "1.0"));
+        //final double scaling = Double.parseDouble(Main.getInstance().getProperties().getProperty("Scaling", "1.0"));
 
+        /*
         String filterText = Main.getInstance().getProperties().getProperty("Filter", "false");
         Filter filter = Filter.NEAREST_NEIGHBOUR;
         if (filterText.equalsIgnoreCase("true") || filterText.equalsIgnoreCase("hqx")) {
@@ -93,13 +94,15 @@ public class AnimationBuilder {
         } else if (filterText.equalsIgnoreCase("bicubic")) {
             filter = ImagePairLoader.Filter.BICUBIC;
         }
+        */
 
         if (imagePath != null) {
             final String[] anchorCoordinates = anchorText.split(",");
             final Point anchor = new Point(Integer.parseInt(anchorCoordinates[0]), Integer.parseInt(anchorCoordinates[1]));
 
             try {
-                ImagePairLoader.load(imagePath, imageRightPath, anchor, scaling, filter, opacity);
+                // ImagePairLoader.load(imagePath, imageRightPath, anchor, scaling, filter, opacity);
+                ImagePairLoader.load(imagePath, imageRightPath, anchor);
             } catch (IOException | NumberFormatException e) {
                 String error = imagePath.toString();
                 if (imageRightPath != null) {
@@ -113,8 +116,10 @@ public class AnimationBuilder {
         final String[] moveCoordinates = moveText.split(",");
         int moveX = Integer.parseInt(moveCoordinates[0]);
         int moveY = Integer.parseInt(moveCoordinates[1]);
-        moveX = Math.abs(moveX) > 0 && Math.abs(moveX * scaling) < 1 ? moveX > 0 ? 1 : -1 : (int) Math.round(moveX * scaling);
-        moveY = Math.abs(moveY) > 0 && Math.abs(moveY * scaling) < 1 ? moveY > 0 ? 1 : -1 : (int) Math.round(moveY * scaling);
+        moveX = Math.abs(moveX) > 0 && Math.abs(moveX) < 1 ? moveX > 0 ? 1 : -1 : (int) Math.round(moveX);
+        moveY = Math.abs(moveY) > 0 && Math.abs(moveY) < 1 ? moveY > 0 ? 1 : -1 : (int) Math.round(moveY);
+        // moveX = Math.abs(moveX) > 0 && Math.abs(moveX * scaling) < 1 ? moveX > 0 ? 1 : -1 : (int) Math.round(moveX * scaling);
+        // moveY = Math.abs(moveY) > 0 && Math.abs(moveY * scaling) < 1 ? moveY > 0 ? 1 : -1 : (int) Math.round(moveY * scaling);
 
         final int duration = Integer.parseInt(durationText);
 

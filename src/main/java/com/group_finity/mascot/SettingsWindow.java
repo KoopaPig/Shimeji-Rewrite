@@ -39,7 +39,7 @@ public class SettingsWindow extends JDialog {
     private Boolean alwaysShowShimejiChooser = false;
     private Boolean alwaysShowInformationScreen = false;
     private String filter = "nearest";
-    private double scaling = 1.0;
+    // private double scaling = 1.0;
     // private double opacity = 1.0;
     private Boolean windowedMode = false;
     private Dimension windowSize = new Dimension(600, 500);
@@ -64,27 +64,27 @@ public class SettingsWindow extends JDialog {
     public void init() {
         // initialise controls
         setLocationRelativeTo(null);
-        grpFilter.add(radFilterNearest);
-        grpFilter.add(radFilterBicubic);
-        grpFilter.add(radFilterHqx);
-        Dictionary<Integer, JLabel> labelTable = IntStream.range(0, 9).boxed().collect(Collectors.toMap(index -> index * 10, index -> new JLabel(index + "x"), (a, b) -> b, Hashtable::new));
-        sldScaling.setLabelTable(labelTable);
-        sldScaling.setPaintLabels(true);
-        sldScaling.setSnapToTicks(true);
+        // grpFilter.add(radFilterNearest);
+        // grpFilter.add(radFilterBicubic);
+        // grpFilter.add(radFilterHqx);
+        // Dictionary<Integer, JLabel> labelTable = IntStream.range(0, 9).boxed().collect(Collectors.toMap(index -> index * 10, index -> new JLabel(index + "x"), (a, b) -> b, Hashtable::new));
+        // sldScaling.setLabelTable(labelTable);
+        // sldScaling.setPaintLabels(true);
+        // sldScaling.setSnapToTicks(true);
 
         // load existing settings
         Properties properties = Main.getInstance().getProperties();
         alwaysShowShimejiChooser = Boolean.parseBoolean(properties.getProperty("AlwaysShowShimejiChooser", "false"));
         alwaysShowInformationScreen = Boolean.parseBoolean(properties.getProperty("AlwaysShowInformationScreen", "false"));
-        String filterText = Main.getInstance().getProperties().getProperty("Filter", "false");
-        filter = "nearest";
-        if (filterText.equalsIgnoreCase("true") || filterText.equalsIgnoreCase("hqx")) {
-            filter = "hqx";
-        } else if (filterText.equalsIgnoreCase("bicubic")) {
-            filter = "bicubic";
-        }
+        // String filterText = Main.getInstance().getProperties().getProperty("Filter", "false");
+        // filter = "nearest";
+        // if (filterText.equalsIgnoreCase("true") || filterText.equalsIgnoreCase("hqx")) {
+        //     filter = "hqx";
+        // } else if (filterText.equalsIgnoreCase("bicubic")) {
+        //     filter = "bicubic";
+        // }
         // opacity = Double.parseDouble(properties.getProperty("Opacity", "1.0"));
-        scaling = Double.parseDouble(properties.getProperty("Scaling", "1.0"));
+        // scaling = Double.parseDouble(properties.getProperty("Scaling", "1.0"));
         windowedMode = properties.getProperty("Environment", "generic").equals("virtual");
         String[] windowArray = properties.getProperty("WindowSize", "600x500").split("x");
         windowSize = new Dimension(Integer.parseInt(windowArray[0]), Integer.parseInt(windowArray[1]));
@@ -93,15 +93,15 @@ public class SettingsWindow extends JDialog {
         backgroundMode = properties.getProperty("BackgroundMode", "centre");
         chkAlwaysShowShimejiChooser.setSelected(alwaysShowShimejiChooser);
         chkAlwaysShowInformationScreen.setSelected(alwaysShowInformationScreen);
-        if (filter.equals("bicubic")) {
-            radFilterBicubic.setSelected(true);
-        } else if (filter.equals("hqx")) {
-            radFilterHqx.setSelected(true);
-        } else {
-            radFilterNearest.setSelected(true);
-        }
+        // if (filter.equals("bicubic")) {
+        //     radFilterBicubic.setSelected(true);
+        // } else if (filter.equals("hqx")) {
+        //     radFilterHqx.setSelected(true);
+        // } else {
+        //     radFilterNearest.setSelected(true);
+        // }
         // sldOpacity.setValue((int) (opacity * 100));
-        sldScaling.setValue((int) (scaling * 10));
+        // sldScaling.setValue((int) (scaling * 10));
 
         for (String item : properties.getProperty("InteractiveWindows", "").split("/"))
             if (!item.trim().isEmpty()) {
@@ -150,11 +150,11 @@ public class SettingsWindow extends JDialog {
         chkAlwaysShowShimejiChooser.setText(language.getString("AlwaysShowShimejiChooser"));
         chkAlwaysShowInformationScreen.setText(language.getString("AlwaysShowInformationScreen"));
         // lblOpacity.setText(language.getString("Opacity"));
-        lblScaling.setText(language.getString("Scaling"));
-        lblFilter.setText(language.getString("FilterOptions"));
-        radFilterNearest.setText(language.getString("NearestNeighbour"));
-        radFilterHqx.setText(language.getString("Filter"));
-        radFilterBicubic.setText(language.getString("BicubicFilter"));
+        // lblScaling.setText(language.getString("Scaling"));
+        // lblFilter.setText(language.getString("FilterOptions"));
+        // radFilterNearest.setText(language.getString("NearestNeighbour"));
+        // radFilterHqx.setText(language.getString("Filter"));
+        // radFilterBicubic.setText(language.getString("BicubicFilter"));
         pnlInteractiveTabs.setTitleAt(0, language.getString("Whitelist"));
         pnlInteractiveTabs.setTitleAt(1, language.getString("Blacklist"));
         btnAddInteractiveWindow.setText(language.getString("Add"));
@@ -247,18 +247,18 @@ public class SettingsWindow extends JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        grpFilter = new ButtonGroup();
+        // grpFilter = new ButtonGroup();
         jScrollPane1 = new JScrollPane();
         jTextArea1 = new JTextArea();
         pnlTabs = new JTabbedPane();
         pnlGeneral = new JPanel();
         chkAlwaysShowShimejiChooser = new JCheckBox();
-        lblScaling = new JLabel();
-        sldScaling = new JSlider();
-        lblFilter = new JLabel();
-        radFilterNearest = new JRadioButton();
-        radFilterBicubic = new JRadioButton();
-        radFilterHqx = new JRadioButton();
+        // lblScaling = new JLabel();
+        // sldScaling = new JSlider();
+        // lblFilter = new JLabel();
+        // radFilterNearest = new JRadioButton();
+        // radFilterBicubic = new JRadioButton();
+        // radFilterHqx = new JRadioButton();
         // sldOpacity = new JSlider();
         // lblOpacity = new JLabel();
         chkAlwaysShowInformationScreen = new JCheckBox();
@@ -376,28 +376,28 @@ public class SettingsWindow extends JDialog {
         chkAlwaysShowShimejiChooser.setText("Always Show Shimeji Chooser");
         chkAlwaysShowShimejiChooser.addItemListener(this::chkAlwaysShowShimejiChooserItemStateChanged);
 
-        lblScaling.setText("Scaling");
+        // lblScaling.setText("Scaling");
 
-        sldScaling.setMajorTickSpacing(10);
-        sldScaling.setMaximum(80);
-        sldScaling.setMinorTickSpacing(5);
-        sldScaling.setPaintLabels(true);
-        sldScaling.setPaintTicks(true);
-        sldScaling.setSnapToTicks(true);
-        sldScaling.setValue(10);
-        sldScaling.setPreferredSize(new Dimension(300, 45));
-        sldScaling.addChangeListener(this::sldScalingStateChanged);
+        // sldScaling.setMajorTickSpacing(10);
+        // sldScaling.setMaximum(80);
+        // sldScaling.setMinorTickSpacing(5);
+        // sldScaling.setPaintLabels(true);
+        // sldScaling.setPaintTicks(true);
+        // sldScaling.setSnapToTicks(true);
+        // sldScaling.setValue(10);
+        // sldScaling.setPreferredSize(new Dimension(300, 45));
+        // sldScaling.addChangeListener(this::sldScalingStateChanged);
 
-        lblFilter.setText("Filter");
+        // lblFilter.setText("Filter");
 
-        radFilterNearest.setText("Nearest");
-        radFilterNearest.addItemListener(this::radFilterItemStateChanged);
+        // radFilterNearest.setText("Nearest");
+        // radFilterNearest.addItemListener(this::radFilterItemStateChanged);
 
-        radFilterBicubic.setText("Bicubic");
-        radFilterBicubic.addItemListener(this::radFilterItemStateChanged);
+        // radFilterBicubic.setText("Bicubic");
+        // radFilterBicubic.addItemListener(this::radFilterItemStateChanged);
 
-        radFilterHqx.setText("hqx");
-        radFilterHqx.addItemListener(this::radFilterItemStateChanged);
+        // radFilterHqx.setText("hqx");
+        // radFilterHqx.addItemListener(this::radFilterItemStateChanged);
 
         // sldOpacity.setMajorTickSpacing(10);
         // sldOpacity.setMinorTickSpacing(5);
@@ -421,16 +421,6 @@ public class SettingsWindow extends JDialog {
                                 .addContainerGap()
                                 .addGroup(pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                                         .addComponent(chkAlwaysShowShimejiChooser)
-                                        .addComponent(lblFilter)
-                                        .addComponent(lblScaling)
-                                        .addGroup(pnlGeneralLayout.createSequentialGroup()
-                                                .addGap(10, 10, 10)
-                                                .addGroup(pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                                                        .addGroup(pnlGeneralLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                                                .addComponent(radFilterNearest)
-                                                                .addComponent(sldScaling, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                                .addComponent(radFilterBicubic)
-                                                                .addComponent(radFilterHqx))))
                                         .addComponent(chkAlwaysShowInformationScreen))
                                 .addContainerGap(26, Short.MAX_VALUE))
         );
@@ -468,20 +458,7 @@ public class SettingsWindow extends JDialog {
                                 .addComponent(chkAlwaysShowShimejiChooser)
                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(chkAlwaysShowInformationScreen)
-                                .addGap(18, 18, 18)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblScaling)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(sldScaling, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lblFilter)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(radFilterNearest)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(radFilterBicubic)
-                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(radFilterHqx)
-                                .addContainerGap(40, Short.MAX_VALUE))
+                )
         );
         
         // OLD VERSION //
@@ -911,8 +888,8 @@ public class SettingsWindow extends JDialog {
                 !Color.decode(properties.getProperty("Background", "#00FF00")).equals(backgroundColour) ||
                 !properties.getProperty("BackgroundMode", "centre").equals(backgroundMode) ||
                 !properties.getProperty("BackgroundImage", "").equalsIgnoreCase(backgroundImage == null ? "" : backgroundImage);
-        imageReloadRequired = !properties.getProperty("Filter", "false").equalsIgnoreCase(filter) ||
-                Double.parseDouble(properties.getProperty("Scaling", "1.0")) != scaling;
+        // imageReloadRequired = !properties.getProperty("Filter", "false").equalsIgnoreCase(filter) ||
+        //         Double.parseDouble(properties.getProperty("Scaling", "1.0")) != scaling;
         // imageReloadRequired = !properties.getProperty("Filter", "false").equalsIgnoreCase(filter) ||
         //         Double.parseDouble(properties.getProperty("Scaling", "1.0")) != scaling ||
         //         Double.parseDouble(properties.getProperty("Opacity", "1.0")) != opacity;        
@@ -923,8 +900,8 @@ public class SettingsWindow extends JDialog {
             properties.setProperty("AlwaysShowShimejiChooser", alwaysShowShimejiChooser.toString());
             properties.setProperty("AlwaysShowInformationScreen", alwaysShowInformationScreen.toString());
             // properties.setProperty("Opacity", Double.toString(opacity));
-            properties.setProperty("Scaling", Double.toString(scaling));
-            properties.setProperty("Filter", filter);
+            // properties.setProperty("Scaling", Double.toString(scaling));
+            // properties.setProperty("Filter", filter);
             properties.setProperty("InteractiveWindows", interactiveWindows);
             properties.setProperty("Environment", windowedMode ? "virtual" : "generic");
             if (windowedMode) {
@@ -982,6 +959,7 @@ public class SettingsWindow extends JDialog {
         alwaysShowShimejiChooser = evt.getStateChange() == ItemEvent.SELECTED;
     }// GEN-LAST:event_chkAlwaysShowShimejiChooserItemStateChanged
 
+    /*
     private void radFilterItemStateChanged(ItemEvent evt)// GEN-FIRST:event_radFilterItemStateChanged
     {// GEN-HEADEREND:event_radFilterItemStateChanged
         if (evt.getStateChange() == ItemEvent.SELECTED) {
@@ -996,7 +974,9 @@ public class SettingsWindow extends JDialog {
             }
         }
     }// GEN-LAST:event_radFilterItemStateChanged
+     */
 
+    /*
     private void sldScalingStateChanged(ChangeEvent evt)// GEN-FIRST:event_sldScalingStateChanged
     {// GEN-HEADEREND:event_sldScalingStateChanged
         if (!sldScaling.getValueIsAdjusting()) {
@@ -1015,6 +995,7 @@ public class SettingsWindow extends JDialog {
             }
         }
     }// GEN-LAST:event_sldScalingStateChanged
+     */
 
     private void btnWebsiteActionPerformed(ActionEvent evt)// GEN-FIRST:event_btnWebsiteActionPerformed
     {// GEN-HEADEREND:event_btnWebsiteActionPerformed
@@ -1230,7 +1211,7 @@ public class SettingsWindow extends JDialog {
     //private JLabel lblOpacity;
     private JLabel lblPrimaryColour1;
     private JLabel lblPrimaryColour2;
-    private JLabel lblScaling;
+    //private JLabel lblScaling;
     private JLabel lblSecondaryColour1;
     private JLabel lblSecondaryColour2;
     private JLabel lblSecondaryColour3;
@@ -1277,7 +1258,7 @@ public class SettingsWindow extends JDialog {
     private Box.Filler rigid4;
     private JSlider sldMenuOpacity;
     //private JSlider sldOpacity;
-    private JSlider sldScaling;
+    //private JSlider sldScaling;
     private JSpinner spnWindowHeight;
     private JSpinner spnWindowWidth;
     private JTextField txtBackgroundColour;
