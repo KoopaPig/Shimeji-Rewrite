@@ -18,9 +18,10 @@ public class Pose {
     private final int dy;
     private final int duration;
     private final String sound;
+    private final String command;
 
     public Pose(final Path image) {
-        this(image, null, 0, 0, 1);
+        this(image, null, 0, 0, 1, null);
     }
 
     public Pose(final Path image, final int duration) {
@@ -43,13 +44,27 @@ public class Pose {
         this(image, rightImage, dx, dy, duration, null);
     }
 
+    public Pose(final Path image, final String command) {
+        this(image, null, 0, 0, 1,null, command);
+    }
+
+    public Pose(final Path image, final Path rightImage, final String command) {
+        this(image, rightImage, 0, 0, 1,null, command);
+    }
+
     public Pose(final Path image, final Path rightImage, final int dx, final int dy, final int duration, final String sound) {
+        this(image, rightImage, dx, dy, duration, sound, null);
+    }
+
+    // final in chain
+    public Pose(final Path image, final Path rightImage, final int dx, final int dy, final int duration, final String sound, final String command) {
         this.image = image;
         this.rightImage = rightImage;
         this.dx = dx;
         this.dy = dy;
         this.duration = duration;
         this.sound = sound;
+        this.command = command;
     }
 
     @Override
@@ -62,6 +77,7 @@ public class Pose {
                 mascot.getAnchor().y + dy));
         mascot.setImage(ImagePairs.getImage(getImageName(), mascot.isLookRight()));
         mascot.setSound(sound);
+        mascot.setCommand(command);
     }
 
     public String getImageName() {
@@ -86,5 +102,9 @@ public class Pose {
 
     public String getSoundName() {
         return sound;
+    }
+
+    public String getCommand() {
+        return command;
     }
 }

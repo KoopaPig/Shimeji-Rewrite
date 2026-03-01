@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sonic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46fa06e0c0ed128a5b4b05d77f564ec87a9d8a18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73a1bd5eb228352034f063f40fa35532ec872f06")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sonic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sonic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

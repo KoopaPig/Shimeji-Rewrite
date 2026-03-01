@@ -39,6 +39,11 @@ namespace RewriteWrapper
             #endregion SETUP
 
             StartSequence();
+            // Do this: set up a timer so it checks every so often, maybe every 250 ms, so 4 times per second. Hold last frame before transition for at least that long.
+
+            System.Timers.Timer timer = new System.Timers.Timer(250);
+            timer.Elapsed += (s, e) => JavaCommunicator.CheckForCommand();
+            timer.Start();
         }
 
         #region EVENTS

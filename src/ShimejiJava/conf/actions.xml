@@ -8,6 +8,12 @@
 
         <!-- Standing -->
 
+        <Action Name="IssueTestCommand" Type="Stay" BorderType="Floor">
+            <Animation>
+                <Pose Image="/shime26.png" ImageAnchor="64,128" Velocity="0,0" Duration="10" Command="TEST"/>
+            </Animation>
+        </Action>
+
         <Action Name="Stand" Type="Stay" BorderType="Floor">
             <Animation>
                 <Pose Image="/shime1.png" ImageAnchor="64,128" Velocity="0,0" Duration="250"/>

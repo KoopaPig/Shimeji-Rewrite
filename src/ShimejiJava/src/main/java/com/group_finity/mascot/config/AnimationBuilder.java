@@ -8,7 +8,7 @@ import com.group_finity.mascot.exception.AnimationInstantiationException;
 import com.group_finity.mascot.exception.ConfigurationException;
 import com.group_finity.mascot.exception.VariableException;
 import com.group_finity.mascot.image.ImagePairLoader;
-import com.group_finity.mascot.image.ImagePairLoader.Filter;
+//import com.group_finity.mascot.image.ImagePairLoader.Filter;
 import com.group_finity.mascot.script.Variable;
 import com.group_finity.mascot.sound.SoundLoader;
 
@@ -82,6 +82,7 @@ public class AnimationBuilder {
         final String durationText = frameNode.getAttribute(schema.getString("Duration"));
         String soundText = frameNode.getAttribute(schema.getString("Sound"));
         final String volumeText = frameNode.getAttribute(schema.getString("Volume")) != null ? frameNode.getAttribute(schema.getString("Volume")) : "0";
+        final String commandText = frameNode.getAttribute(schema.getString("Command")) != null ? frameNode.getAttribute(schema.getString("Command")) : null;
 
         //final double opacity = Double.parseDouble(Main.getInstance().getProperties().getProperty("Opacity", "1.0"));
         //final double scaling = Double.parseDouble(Main.getInstance().getProperties().getProperty("Scaling", "1.0"));
@@ -144,7 +145,7 @@ public class AnimationBuilder {
             }
         }
 
-        final Pose pose = new Pose(imagePath, imageRightPath, moveX, moveY, duration, soundText);
+        final Pose pose = new Pose(imagePath, imageRightPath, moveX, moveY, duration, soundText, commandText);
 
         log.log(Level.FINE, "Finished loading pose: {0}", pose);
 

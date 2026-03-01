@@ -3,6 +3,12 @@
         xsi:schemaLocation="http://www.group-finity.com/Mascot Mascot.xsd">
 
     <BehaviorList>
+        <Behavior Name="TestCommand" Frequency="0">
+            <NextBehaviorList Add="false">
+                <BehaviorReference Name="IssueTestCommand" Frequency="1"/>
+            </NextBehaviorList>
+        </Behavior>
+        
         <!-- ALWAYS REQUIRED -->
         <Behavior Name="ChaseMouse" Frequency="0" Hidden="true">
             <NextBehaviorList Add="false">

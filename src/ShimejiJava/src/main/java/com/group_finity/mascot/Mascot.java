@@ -647,6 +647,10 @@ public class Mascot {
         sound = name;
     }
 
+    public void setCommand(final String name) {
+        Communicator.sendCommand(name);
+    }
+
     public boolean isPaused() {
         return paused;
     }

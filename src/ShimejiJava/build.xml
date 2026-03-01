@@ -12,6 +12,9 @@
 
         <!-- Create output folder -->
         <mkdir dir="target/Shimeji-ee_${project.version}_${edition}" />
+        
+        <!-- Ensure C#-to-Java communication file exists in output -->
+        <echo file="target/communicate.txt">COMMAND=NONE</echo>
 
         <!-- Copy main artifacts -->
         <copy todir="target/Shimeji-ee_${project.version}_${edition}">
@@ -40,6 +43,13 @@
                 <include name="conf/**/*"/>
                 <exclude name="conf/behaviors.xml"/>
                 <exclude name="conf/*Behavior.xml"/>
+            </fileset>
+        </copy>
+
+        <!-- Copy ALL Rewrite_* folders -->
+        <copy todir="target/">
+            <fileset dir=".">
+                <include name="Rewrite_*/**/*"/>
             </fileset>
         </copy>
 

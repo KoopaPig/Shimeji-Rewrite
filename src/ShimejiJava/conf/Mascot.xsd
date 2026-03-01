@@ -739,6 +739,13 @@
                 </documentation>
             </annotation>
         </attribute>
+        <attribute name="Command" type="string" default="NONE">
+            <annotation>
+                <documentation>
+                    Command to issue to C# wrapper. Defaults to "NONE".
+                </documentation>
+            </annotation>
+        </attribute>
     </complexType>
 
     <complexType name="Hotspot">
